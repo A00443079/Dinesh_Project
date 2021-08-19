@@ -1,0 +1,49 @@
+<style>
+h1{
+    color: red;
+    font-size: 50px;
+    margin: auto;
+}
+
+label{
+    color: blue;
+    font-size: 35px;
+    margin: auto;
+
+}
+button{
+    color: green;
+    font-size: 35px;
+    margin: auto;
+}
+
+</style>
+<h1>University App</h1>
+<form>
+ <div class="form-group">
+    <label for="universityName">Name</label>
+ <input type="text" class="form-control" name="name" [(ngModel)]="name">
+</div><br> 
+<div class="form-group">
+    <label for="universityAddress">Address</label>
+ <input type="text" class="form-control" name="address" [(ngModel)]="address">
+</div><br>
+<div class="form-group">
+    <label for="universityPhone">Phone Number</label>
+ <input type="text" class="form-control" name="phone" [(ngModel)]="phone">
+</div><br>
+<div class="btn-toolbar">
+    <button type="submit" (click)="saveUniversity()"> Save</button>
+    <button type="submit" (click)="removeUniversity()"> Delete</button>
+    <br>
+</div>
+<div class="form-group">
+    <br>
+    <label for="universityName">University Search:</label>
+ <input type="text" class="form-control" name="sName" [(ngModel)]="sName">
+</div><br>
+<div class="btn-toolbar">
+    <button type="submit" (click)="searchUniversity()"> SEARCH</button>
+    <button type="submit" (click)="searchAllUniversity()"> Search all UNIVERSITIES</button>
+</div>
+</form>
